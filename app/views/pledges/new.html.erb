@@ -1,0 +1,23 @@
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+
+          <%= form_tag project_pledges_path(@project, @pledge) do %>
+            <div class="field">
+              <%= label_tag :amount %>
+              <%= text_field_tag :amount %>
+            </div>
+
+            <div class="action">
+              <%= submit_tag %>
+            </div>
+
+          <% end %>
+
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
